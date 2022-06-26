@@ -1,0 +1,64 @@
+*{
+  box-sizing: border-box;
+}
+
+body{
+  margin: 0;
+  padding: 0;
+  font-size: 16px;
+  line-height: 1.7;
+  font-family: Arial, Helvetica, sans-serif;
+  background-color: #222222;
+}
+ul{
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+li{
+  padding: 0;
+  margin: 0;
+}
+
+
+*{
+  scrollbar-color: #3199dc #222222;
+  scrollbar-width: thin;
+}
+::-webkit-scrollbar{
+  width: 8px;
+  height: 8px;
+}
+::-webkit-scrollbar-thumb{
+  background-color: #3199dc;
+  border-radius: 5px;
+}
+::-webkit-scrollbar-track{
+  background-color: #222222;
+}
+.comics__container{
+  display: flex;
+  flex-wrap: wrap;
+}
+.comics__item{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 250px;
+  margin: 20px;
+  background-color: white;
+  transition: 0.5s;
+  cursor: pointer;
+  &:hover{
+    transform: rotate(-3deg) scale(0.95);
+    filter:saturate(150%)
+  }
+}
+.comics__name{
+  display: flex;
+  margin: 0 auto;
+  padding: 10px 15px;
+}
+.comics__img{
+  width: 100%;
+}
